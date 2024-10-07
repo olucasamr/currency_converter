@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de moeda</title>
+</head>
+<body>
+
+    <h1>Conversor monetário</h1>
+
+    <div class="Container">
+
+        <div class="Convercao">
+
+            <div class="Operation">
+                <div class="DivOpr">
+                    <h3>Valor</h3>
+                    <input class="Valor" type="text" placeholder="0.00">
+                </div>
+    
+                <div class="MoedaParaCoverter DivOpr">
+                    <h3>Moeda 1</h3>
+                    <select name="ConvertDe" id="Moeda1" class="EscolhaMoeda" data-size="2">
+                        <option value="BRL">Reais(BRL)</option>
+                        <option value="USD">Dolar Estados Unidos(USD)</option>
+                        <option value="EUR">Euros(EUR)</option>
+                        <option value="BTC">Bitcoin(BTC)</option>
+                    </select>
+                </div>
+    
+                <div class="InvertContainer">
+                    <button class="BtnInverterMoeda BtnHover">
+                    </button>
+                </div>
+    
+                <div class="DivOpr">
+                    <h3>Moeda 2</h3>
+                    <select name="ConvertPara" id="Moeda2" class="EscolhaMoeda">
+                        <option value="USD">Dolar Estados Unidos(USD)</option>
+                        <option value="BRL">Reais(BRL)</option>
+                        <option value="EUR">Euros(EUR)</option>
+                        <option value="BTC">Bitcoin(BTC)</option>
+                    </select>
+                </div>
+    
+                <div class="CoversorContainer">
+                    <button class="BtnConversor BtnHover">
+                    </button>
+                </div>
+            </div>
+
+            <div class="ResultadoConvercao">
+                <div>
+                    <p><b>Convertendo de:</b><span class="ValorMoeda1 TextoResultado"></span></p>
+                    <p><b>Para:</b><span class="ValorMoeda2 TextoResultado"></span></p>
+                </div>
+                <div>
+                    <p><b>Valor:</b><span class="ValorQueVaiConverter TextoResultado"></span></p>
+                    <p><b>Equivale a:</b><span class="Resultado TextoResultado"></span></p>
+                </div> 
+            </div>
+        </div>
+
+    </div>
+    <p>Observação: Algumas converções não são possíveis</p>
+    <p>Nesse projeto só são possíveis converções em BRL,USD,EUR e BTC</p>
+    <p>Confira a lista completa de converções em:</p>
+    <a href="https://economia.awesomeapi.com.br/xml/available">https://economia.awesomeapi.com.br/xml/available</a>
+
+    <script src="./main.js" defer></script>
+</body>
+</html>

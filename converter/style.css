@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 24px;
+}
+
+body{
+    background-color: rgb(23, 193, 116);
+    text-align: center;
+}
+
+.Container{
+    display: flex;
+    justify-content: center;
+}
+
+.Convercao{
+    background-color: rgb(209, 209, 209);
+    width: 50em;
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(68, 68, 68);
+    margin-top: 100px;
+}
+
+.Operation{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.EscolhaMoeda{
+    border: 1px solid rgb(0, 0, 0);
+    overflow-x: auto;
+}
+
+.EscolhaMoeda, .Valor{
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border: 0.5px solid rgb(68, 68, 68);
+}
+
+.EscolhaMoeda, .Valor:hover{
+    cursor: pointer;
+}
+
+.Valor:focus{
+    outline: none;
+}
+
+.BtnInverterMoeda{
+    background-image: url(./assets/invert_arrows.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 4pt;
+}
+.BtnConversor{
+    background-image: url(./assets/icons8-sinal-de-igual-30.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 4pt;
+}
+
+.BtnInverterMoeda, .BtnConversor{
+    background-color: rgb(7, 127, 75);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.BtnHover:hover{
+    background-color: rgb(21, 170, 105);
+    cursor: pointer;
+}
+
+.ResultadoConvercao{
+    background-color: white;
+    margin: 20px 15px 10px 15px;
+    border: 0.5px solid rgb(68, 68, 68);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+.TextoResultado{
+    color: rgb(0, 123, 255);
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+
+    .Convercao{
+        margin-top: 3%;
+        width: 80%;
+        height: 75%;
+        align-items: center;
+    }
+
+    .ResultadoConvercao{
+        width: 80%;
+    }
+
+    .Operation{
+        
+        flex-direction: column;
+    }
+
+    .DivOpr{
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .EscolhaMoeda{
+        width: 70%;
+    }
+
+    .Valor{
+        width: 65%;
+    }
+}
